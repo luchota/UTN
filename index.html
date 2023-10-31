@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Solicitud de Contacto de Seguro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitar Contacto</h1>
+        <form id="insuranceForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="number" id="dni" name="dni" required placeholder="DNI sin puntos ni espacio">
+                
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tipoSeguro">Tipo de Seguro:</label>
+                <select id="tipoSeguro" name="tipoSeguro" required>
+                    <option value="Basico">Básico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="precioSeguro"></label>
+                <span id="precioSeguro">Seleccione un tipo de seguro</span>
+            </div>
+            <div class="form-groups">
+                <button type="submit">Enviar Solicitud</button>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
